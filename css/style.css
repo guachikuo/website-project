@@ -1,0 +1,55 @@
+body{
+	background: url("../picture/bg_lol.jpg");
+	background-attachment: fixed;
+	margin: 0;
+}
+
+.head_text{
+	text-align: center;
+	font-size: 64px;
+}
+
+.container{
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.broadcast{
+	float: left;
+	width: 300px;
+	margin: 10px 6.67%; 
+}
+
+.channel{
+	height: 180px;
+	width: 100%; 
+	background-image: url("../picture/preview_320x180.jpg"); 
+}
+
+.twitcher{
+	float: left;
+	width: 100%;
+	height: 70px; 
+	background-color: rgba(0,0,0,0.5);
+}
+
+.twitcher_pic{
+	background-image: url("../picture/twitcher_300x300.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 5%;
+    border-radius: 100%;
+}
+
+.twitch_channel, .twitcher_name{
+	color: #ffffff;
+	font-size: 16px;
+	margin-top: 9px; 
+	overflow: hidden;
+}
+

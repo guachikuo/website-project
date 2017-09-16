@@ -1,0 +1,79 @@
+@dark-white: #DCDCDC;
+
+.fit_all_browser(@arg1, @arg2){
+  -webkit-@{arg1} : @arg2;
+  -moz-@{arg1} : @arg2;
+  @{arg1} : @arg2;
+}
+
+body{
+  background: url("../picture/bg_lol.jpg");
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.head_text{
+  text-align: center;
+  font-size: 64px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+}
+  
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 1000px;
+}
+    
+.broadcast{
+  width: 300px;
+  margin-bottom: 30px;
+  .fit_all_browser(transition, ~"filter 0.5s, box-shadow 0.5s");
+  .fit_all_browser(transition-delay, 0s);
+  &:hover{
+        box-shadow: 3px 3px 10px 3px #000000;
+        .fit_all_browser(filter,brightness(150%));
+  }
+  .channel{
+    height: 180px;
+    width: 100%; 
+    background-image: url("../picture/preview_320x180.jpg");
+  }
+  .twitcher{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.pic_box{
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .twitcher_pic{
+  background-image: url("../picture/twitcher_300x300.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  }
+}
+
+.info{
+  width: 220px;
+  .twitch_channel, .twitcher_name{
+  color: @dark-white;
+  height: 20px;
+  margin-top: 10px; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  }
+}

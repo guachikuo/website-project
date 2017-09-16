@@ -17,17 +17,23 @@ body{
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: flex-start;
-	width: 1200px;
+	justify-content: space-around;
+	width: 1000px;
 }
 
 .broadcast{
-	display: flex;
-	flex-wrap: wrap;
 	width: 300px;
-	border-color: rgba(0,0,0,0);
-	border-style: solid;
-	border-width: 20px 50px 30px 50px;
+	margin-bottom: 30px;
+	-webkit-transition: filter 0.5s, box-shadow 0.5s;
+	-webkit-transition-delay: 0s;
+	transition: filter 0.5s, box-shadow 0.5s;
+	transition-delay: 0s;
+}
+
+.broadcast:hover {
+	box-shadow: 3px 3px 10px 3px #000000;
+	-webkit-filter: brightness(150%); /* Safari */
+    filter: brightness(150%);
 }
 
 .channel{
@@ -61,12 +67,10 @@ body{
 
 .info{
 	width: 220px;
-	display: flex;
-	flex-wrap: wrap;
 }
 
 .twitch_channel, .twitcher_name{
-	color: #ffffff;
+	color: #DCDCDC;
 	height: 20px;
 	margin-top: 10px; 
 	overflow: hidden;

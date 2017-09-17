@@ -2,7 +2,7 @@ $(document).ready(function(){
 	var api = "https://api.twitch.tv/kraken/streams/";
 	var game = "League%20of%20Legends" ;
 	var client_id = "6515p95jb9xihs3dg4w1d05ck6vy8n";
-	var limit = 9;
+	var limit = 20;
 	var apiURL = api + "?game=" + game + "&client_id=" + client_id + "&limit=" + limit; 
 	$.ajax({
 		method: "GET",
@@ -33,6 +33,7 @@ $(document).ready(function(){
 					'</div>'	
     			);
     		}
+    		$('.row').append('<div class="broadcast"></div>');
   		}
 	});
 });

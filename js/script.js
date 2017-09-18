@@ -6,7 +6,7 @@ function getApi(call_back){
 	var api = "https://api.twitch.tv/kraken/streams/";
 	var game = "League%20of%20Legends" ;
 	var client_id = "6515p95jb9xihs3dg4w1d05ck6vy8n";
-	var limit = 15;
+	var limit = 9;
 	var apiURL = api + "?game=" + game + "&client_id=" + client_id + "&limit=" + limit + "&offset=" + index; 
 	isLoading = true;
 	$.ajax({
@@ -31,7 +31,7 @@ function getdata(){
 			    $('.row').append(getBroadcast(data));
 			}
 		}
-		index+=15;
+		index+=9;
 		isLoading = false;
 	});
 }

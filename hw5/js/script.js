@@ -62,6 +62,7 @@ function getBroadcast(data){
 			'</div>';
 }
 
+/*infinite scroll*/
 $(function(){
 	getdata();
 	$(window).scroll(function() {

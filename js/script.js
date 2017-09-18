@@ -31,7 +31,7 @@ function getdata(){
 			    $('.row').append(getBroadcast(data));
 			}
 		}
-		index+=9;
+		index+=15;
 		isLoading = false;
 	});
 }

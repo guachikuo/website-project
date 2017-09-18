@@ -64,11 +64,11 @@ function getBroadcast(data){
 
 $(function(){
 	getdata();
-	$(window).scroll(function() {
+	/*$(window).scroll(function() {
    		if($(window).scrollTop() + $(window).height() > $(document).height() - 100) {
        		if(!isLoading){
        			getdata();
        		}
    		}
-   	});
+   	});*/
 });
